@@ -11,6 +11,6 @@ Found python libraries for sound detection and playing :
 | Winsound  |   |
 | Sounddevice  |   |
 | PyAudioWPatch  |   |
-|   |   |
+| pyCaw  |   |
 |   |   |
 |   |   |
