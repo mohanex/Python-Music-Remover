@@ -8,9 +8,9 @@ Thus, I came up with the idea of automating this procedure.
 Found python libraries for sound detection and playing :
 |  Python Library |  Validation |
 |---|---|
-| Winsound  |   |
-| Sounddevice  |   |
-| PyAudioWPatch  |   |
-| pyCaw  |   |
+| Winsound  | X  |
+| Sounddevice  | X  |
+| PyAudioWPatch  |  X |
+| pyCaw  | V  |
 |   |   |
 |   |   |
