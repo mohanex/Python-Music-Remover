@@ -2,10 +2,11 @@ from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 from lib.Sound_playing import audio_playing
+import time
 
-devices = AudioUtilities.GetSpeakers()
+"""devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-volume = cast(interface, POINTER(IAudioEndpointVolume))
+volume = cast(interface, POINTER(IAudioEndpointVolume))"""
 
 
 #the sound goes from -66 to 0db, with every 6db the sound doubles 
@@ -15,10 +16,11 @@ def main():
     while True :
         #print(volume.GetVolumeRange())
         print(audio_playing.is_playing())
-        if audio_playing.is_playing():
+        time.sleep(0.5)
+        """if audio_playing.is_playing():
             volume.SetMasterVolumeLevel(-65.0, None)
         else :
-            volume.SetMasterVolumeLevel(0.0, None)
+            volume.SetMasterVolumeLevel(0.0, None)"""
 
 #volume.SetMasterVolumeLevel(-66.0, None)
 
