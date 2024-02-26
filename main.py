@@ -9,12 +9,12 @@ interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))"""
 
 
-#the sound goes from -66 to 0db, with every 6db the sound doubles 
-#I need to find out a way to calculate the differencian equation between db and pc volume
+# the sound goes from -66 to 0db, with every 6db the sound doubles
+# I need to find out a way to calculate the difference equation between db and pc volume
 
 def main():
-    while True :
-        #print(volume.GetVolumeRange())
+    while True:
+        # print(volume.GetVolumeRange())
         print(audio_playing.is_playing())
         time.sleep(0.5)
         """if audio_playing.is_playing():
@@ -22,11 +22,8 @@ def main():
         else :
             volume.SetMasterVolumeLevel(0.0, None)"""
 
-#volume.SetMasterVolumeLevel(-66.0, None)
 
-
-
-
+# volume.SetMasterVolumeLevel(-66.0, None)
 
 
 # %% 
@@ -35,5 +32,4 @@ if __name__ == '__main__':
     print("Python music remover is running.\n")
     main()
 
-
-# %% 
+# %%

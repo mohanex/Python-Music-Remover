@@ -1,6 +1,7 @@
 import pyaudio
 import time
 
+
 def is_audio_playing():
     audio = pyaudio.PyAudio()
     for i in range(audio.get_device_count()):
@@ -8,6 +9,8 @@ def is_audio_playing():
         if device_info.get('maxInputChannels') > 0 or device_info.get('maxOutputChannels') > 0:
             return True
     return False
+
+
 while True:
     time.sleep(0.5)
     if is_audio_playing():
