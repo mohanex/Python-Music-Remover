@@ -14,3 +14,5 @@ Found python libraries for sound detection and playing :
 | pyCaw  | V  |
 |   |   |
 |   |   |
+
+https://vocal.com/noise-reduction/real-time-audio-filtering/
