@@ -16,3 +16,6 @@ Found python libraries for sound detection and playing :
 |   |   |
 
 https://vocal.com/noise-reduction/real-time-audio-filtering/
+https://hydrogenaud.io/index.php/topic,98308.0.html
+https://learn.microsoft.com/en-us/gaming/playfab/features/multiplayer/networking/concepts-realtime-audio-manipulation
+https://stackoverflow.com/questions/60858399/real-time-microphone-audio-manipulation-windows
